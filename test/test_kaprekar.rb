@@ -22,10 +22,20 @@ class KaprekarTest < Minitest::Test
     assert(kaprekar.input, 1234)
   end
 
-  def test_new_without_input 
+  def test_new_without_input
     kaprekar = Kaprekar.new
     kaprekar.input = 1234
     assert(kaprekar.input, 1234)
-
   end
+
+  def test_valid_input
+    kaprekar = Kaprekar.new('asdf')
+    assert_equal(false, kaprekar.valid_input?)
+
+    assert_raises InvalidInput do
+      Kaprekar.new('asdf').calculate
+    end
+  end
+
+  
 end

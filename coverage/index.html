@@ -14,27 +14,27 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-08-31T20:05:14-07:00">2014-08-31T20:05:14-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-08-31T20:19:59-07:00">2014-08-31T20:19:59-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">44.44%</span></span>
+    (<span class="covered_percent"><span class="red">43.75%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.44
+         0.45
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>2</b> files in total.
-    <b>27</b> relevant lines. 
-    <span class="green"><b>12</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed </span>
+    <b>3</b> files in total.
+    <b>32</b> relevant lines. 
+    <span class="green"><b>14</b> lines covered</span> and
+    <span class="red"><b>18</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,22 @@
       
       <tr>
         <td class="strong"><a href="#b53facd48b69e26b4354ab12eaed5c7dee13c17d" class="src_link" title="lib/kaprekar.rb">lib/kaprekar.rb</a></td>
-        <td class="red strong">40.91 %</td>
-        <td>36</td>
-        <td>22</td>
-        <td>9</td>
-        <td>13</td>
+        <td class="red strong">38.46 %</td>
+        <td>39</td>
+        <td>26</td>
+        <td>10</td>
+        <td>16</td>
         <td>0.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c37f50a3f48bdb7b000aa63387207af3f74d6a5d" class="src_link" title="lib/kaprekar/errors.rb">lib/kaprekar/errors.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -89,11 +99,11 @@
         <div class="source_table" id="b53facd48b69e26b4354ab12eaed5c7dee13c17d">
   <div class="header">
     <h3>lib/kaprekar.rb</h3>
-    <h4><span class="red">40.91 %</span> covered</h4>
+    <h4><span class="red">38.46 %</span> covered</h4>
     <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>13</b> lines missed.</span>
+      <b>26</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>16</b> lines missed.</span>
     </div>
   </div>
   
@@ -106,202 +116,202 @@
           <code class="ruby">require_relative &#39;./kaprekar/num&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;./kaprekar/errors&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"># Class for exploring Kaprekar&#39;s constant.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">class Kaprekar</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  attr_accessor :input</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :reult, :iterations</code>
+          <code class="ruby">  attr_reader :result, :iterations</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize(input = nil)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
+        <li class="missed" data-hits="0" data-linenumber="10">
           
           
           <code class="ruby">    return self if input.nil?</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="missed" data-hits="0" data-linenumber="11">
           
           
           <code class="ruby">    @input = input</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">  def calculate(input = nil)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="15">
           
           
           <code class="ruby">    @input = input unless input.nil?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">    # fail InvalidInputError unless valid_input?(input)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
-          
-          <code class="ruby">    @result = { input: @input }</code>
-        </li>
-      
         <li class="missed" data-hits="0" data-linenumber="16">
           
           
-          <code class="ruby">    @iterations = 0</code>
+          <code class="ruby">    fail InvalidInput unless valid_input?</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="17">
           
           
-          <code class="ruby">    @result = 0</code>
+          <code class="ruby">    @result = { input: @input }</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="18">
           
           
-          <code class="ruby">    until @result == 6174</code>
+          <code class="ruby">    @iterations = 0</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="19">
           
           
-          <code class="ruby">      @result = @input.backward_sort.to_i - @input.forward_sort.to_i</code>
+          <code class="ruby">    num = 0</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="20">
           
           
-          <code class="ruby">      input = @result</code>
+          <code class="ruby">    until num == 6174</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="21">
           
           
-          <code class="ruby">      @iterations += 1</code>
+          <code class="ruby">      num = num.backward_sort.to_i - num.forward_sort.to_i</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="missed" data-hits="0" data-linenumber="22">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      @iterations += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def sanitize_input(input)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="28">
-          
-          
-          <code class="ruby">    input.to_i if input.is_a? String</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
           <code class="ruby">  def valid_input?(input = nil)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
+        <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    return false unless input.to_s.split(&#39;&#39;).count == 4</code>
+          <code class="ruby">    @input = input unless input.nil?</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">    return false if @input.to_i.zero?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">    return false if @input.nil?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">    return false unless @input.to_s.split(&#39;&#39;).count == 4</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
           
           
           <code class="ruby">    true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
@@ -310,10 +320,52 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sanitize_input(input)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">    input.to_i if input.is_a? String</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="c37f50a3f48bdb7b000aa63387207af3f74d6a5d">
+  <div class="header">
+    <h3>lib/kaprekar/errors.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class InvalidInput &lt; StandardError; end</code>
         </li>
       
     </ol>
