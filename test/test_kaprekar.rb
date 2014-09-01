@@ -1,10 +1,7 @@
 require 'minitest'
 require 'minitest/autorun'
-require 'simplecov'
-SimpleCov.start
 require_relative '../lib/kaprekar'
-require_relative '../lib/kaprekar/num'
-
+# Tests for Kaprekar Gem
 class KaprekarTest < Minitest::Test
   def test_backward_sort
     assert 1234.backward_sort, 4321
@@ -35,7 +32,19 @@ class KaprekarTest < Minitest::Test
     assert_raises InvalidInput do
       Kaprekar.new('asdf').calculate
     end
+
+    assert_equal false, Kaprekar.new(1123).valid_input?
   end
 
-  
+  def test_kaprekar
+    assert_equal(
+      Kaprekar.new(1234).calculate,
+      input: 1234,
+      iterations: 3,
+      intermediaries: [{ num: 1234, count: 0 },
+                       { num: 3087, count: 1 },
+                       { num: 8352, count: 2 },
+                       { num: 6174, count: 3 }])
+  end
+
 end

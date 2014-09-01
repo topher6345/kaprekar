@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require './lib/kaprekar'
+
+abort if ARGV[0].nil?
+input = ARGV[0][/[^A-z]+/]
+
+if input.size > 4
+  puts 'Too many digits!'
+  puts 'Please try again with a four digit number with 4 unique digits:'
+  abort
+end
+
+if input.split('').uniq.join != input
+  puts 'error: non-unique digits in number, try again'
+  puts 'Please enter a four digit number with 4 unique digits:'
+  abort
+end
+
+Kaprekar.new(ARGV[0]).pretty

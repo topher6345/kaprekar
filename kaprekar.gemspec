@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    =
     'http://rubygems.org/gems/kaprekar'
   s.license       = 'MIT'
+  s.executables << 'kaprekar'
 end
