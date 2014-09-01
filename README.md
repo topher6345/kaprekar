@@ -1,6 +1,6 @@
 # Kaprekar
 
-A gem to explore [Kaprekar's constant](http://en.wikipedia.org/wiki/6174_(number).
+A gem to explore [Kaprekar's routine](http://en.wikipedia.org/wiki/6174_(number)
 
 [Video on the Kaprekar algorithm](http://youtu.be/d8TRcZklX_Q)
 
@@ -12,7 +12,7 @@ kaprekar 1234
 The number `6174` has a very interesting property.
 
 
-### the Algorithm 
+### Kaprekar's routine
 
 Start with any 4-digit, positive integer with unique digits 
 `1234`
