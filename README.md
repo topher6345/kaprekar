@@ -1,7 +1,8 @@
 # Kaprekar
+or 
+## 6174
 
-
-A gem to explore Kaprekar's constant.
+A gem to explore [Kaprekar's constant](http://en.wikipedia.org/wiki/6174_(number).
 
 [Video on the Kaprekar algorithm](http://youtu.be/d8TRcZklX_Q)
 
