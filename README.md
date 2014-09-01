@@ -22,4 +22,4 @@ Kaprekar discovered the Kaprekar constant or `6174` in 1949.[4] He showed that `
 Repeating from this point onward leaves the same number (7641 − 1467 = 6174). In general, when the operation converges it does so in at most seven iterations.
 
 
-Kaprekar was a schoolteacher and a recreactional mathemetician.
+Dattaraya Ramchandra Kaprekar was a schoolteacher and a recreactional mathemetician.
