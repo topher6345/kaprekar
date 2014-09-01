@@ -17,14 +17,16 @@ class Kaprekar
     @result = { input: @input }
     iterations = 0
     result = 0
+    @intermediaries  = [{ num: @input, count: iterations }]
     input = @input
     until result == 6174
       result = input.backward_sort - input.forward_sort
       puts result
       input = result
       iterations += 1
+      @intermediaries << { num: result, count: iterations }
     end
-    @result = { input: @input, iterations: iterations }
+    @result = { input: @input, iterations: iterations, intermediaries: @intermediaries }
   end
 
   def valid_input?(input = nil)
