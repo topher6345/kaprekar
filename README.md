@@ -2,7 +2,7 @@
 
 A gem to explore [Kaprekar's routine](http://en.wikipedia.org/wiki/6174_(number))
 
-[Video on the Kaprekar algorithm](http://youtu.be/d8TRcZklX_Q)
+[Video on the Kapreka's routine](http://youtu.be/d8TRcZklX_Q)
 
 usage:
 ```bash
